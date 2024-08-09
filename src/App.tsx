@@ -9,9 +9,9 @@ function App() {
     }} >
       <GridItem area='nav' > <Navbar/> </GridItem>
         <Show above='lg'>
-          <GridItem area='aside' bg='gold' > Aside </GridItem>
+          <GridItem area='aside'  > Aside </GridItem>
         </Show>
-      <GridItem area='main' bg='lightBlue' > Main Area </GridItem>
+      <GridItem area='main'   > Main Area </GridItem>
     </Grid>
   )
 }
