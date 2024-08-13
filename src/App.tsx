@@ -11,6 +11,7 @@ import GameSorter from './components/GameSorter'
 export interface GameQuery{
   genre: Genre | null;
   platform: Platform | null;
+  order: string;
 }
 
 
@@ -36,7 +37,7 @@ function App() {
       <GridItem area='main'>
         <Flex marginStart={3} columnGap={3} marginBottom={2}>
          <PlatformSelector selectedPlatform={gameQuery.platform} selectPlatform={(platform)=>{ setGameQuery({...gameQuery,platform})  }}   />
-         <GameSorter/>
+         <GameSorter  selectedOrder={gameQuery.order}  sortGames={(order)=> {setGameQuery({...gameQuery,order}) } }  />
         </Flex>
          <GameGrid gameQuery={gameQuery} />   </GridItem>
     </Grid>
