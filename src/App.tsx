@@ -39,10 +39,10 @@ function App() {
       }}
     >
       <GridItem area="nav">
-        {" "}
+        
         <Navbar
           onSearch={(searchText) => setGameQuery({ ...gameQuery, searchText })}
-        />{" "}
+        />
       </GridItem>
       <Show above="lg">
         <GridItem area="aside" paddingX={5}>
@@ -70,7 +70,7 @@ function App() {
             />
           </Flex>
         </Box>
-        <GameGrid gameQuery={gameQuery} />{" "}
+        <GameGrid gameQuery={gameQuery} />
       </GridItem>
     </Grid>
   );
